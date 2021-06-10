@@ -1,0 +1,24 @@
+.App {
+    min-height: 100vh;
+}
+
+.darken {
+    background: rgba(0, 0, 0, 0.116);
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+@media(max-width: 630px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media(min-width: 630px) {
+    .wrapper {
+        width: 90%;
+        max-width: 1400px;
+    }
+}

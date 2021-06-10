@@ -1,0 +1,91 @@
+/* MENU STYLES*/
+
+.hiddenMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: hidden;
+    padding-top: 5em;
+    padding-left: 4em;
+    background: white;
+    animation: slideIn 300ms ease;
+    z-index: 1000;
+}
+
+.hiddenMenu a {
+    color: black;
+    text-decoration: none;
+}
+
+.hiddenMenu li {
+    margin: 1.5em 0;
+    font-weight: 500;
+}
+
+.hiddenMenu li:hover {
+    color: blue;
+}
+
+/* CLOSE BUTTON */
+
+.close {
+    position: absolute;
+    top: 40px;
+    height: 25px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.close .line {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 2px;
+    width: 20px;
+    display: block;
+    transform: rotate(45deg);
+    background-color: black;
+}
+    
+.line.line1 {
+    transform: rotate(315deg);
+}
+
+/* MENU SLIDE IN ANIMATION */
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+             
+    100% {
+        transform: translateX(0);
+    }
+}
+    
+/* MEDIA QUERIES */
+
+@media(max-width: 635px) {
+    .hiddenMenu {
+        width: 50%;
+    }
+    
+    .hiddenMenu li {
+        margin-left: 0.5em;
+    }
+    
+    .close {
+        left: 20px;
+    }
+}
+
+@media(min-width: 635px) {
+     .hiddenMenu {
+        width: 15em;
+    }
+    
+    .close {
+        left: 33px;
+    }
+}

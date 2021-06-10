@@ -1,0 +1,112 @@
+.movie a {
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+}
+
+.movie a:hover {
+    color: blue;
+    text-decoration: solid blue;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.movie {
+    display: flex;
+    max-width: 500px;
+    margin: 1.5em 0;
+} 
+
+.poster {
+    border-radius: 5px;
+    margin-right: 1em;
+    object-fit: cover;
+}
+
+
+@media(max-width: 768px) {
+    .poster {
+        width: 8em;
+        height: 9em;
+    }
+    
+    .title {
+        display: block;
+        margin-bottom: 3px;
+        font-size: 0.9rem;
+    }
+    
+    .description{
+        font-size: 0.75rem;
+    }
+}
+
+@media(min-width: 768px) {
+    .movies {
+        position: absolute;
+        left: 0;
+        margin-top: 1.5em;
+    }
+    
+    .heading {
+        position: absolute;
+        left: 0;
+    }
+    
+    .text {
+        display: flex;
+        flex-direction: column;
+        max-width: 410px;
+    }
+    
+    .poster {
+        width: 12em;
+        height: 12em;
+    }
+    
+    .title {
+        font-size: 1.1rem;
+    }
+    
+    .description{
+        margin-top: 0.5em;
+        display: block;
+        font-size: 0.85rem;
+        line-height: 1.5em;
+        letter-spacing: 0.1px;
+        color: rgb(56, 56, 56);
+    }
+}
+
+@media(min-width: 1055px) {
+    .movies {
+        position: relative;
+        margin-top: 1.4em;
+        width: 100%;
+    }
+    
+    .heading {
+        position: relative;
+    }
+    
+    .text {
+        display: flex;
+        flex-direction: column;
+        max-width: 410px;
+    }
+    
+    .poster {
+        width: 13em;
+        height: 10em;
+    }
+    
+    .description{
+        margin-top: 0.5em;
+        display: block;
+        font-size: 0.85rem;
+        line-height: 1.5em;
+        letter-spacing: 0.1px;
+        color: rgb(56, 56, 56);
+    }
+}
